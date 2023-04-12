@@ -1,0 +1,37 @@
+.highlight{
+    background-color: #99db9d;
+    display:inline-block;
+
+}
+.non-highlight{
+    display: inline-block;
+}
+.highlight_red{
+    background-color: #e67c87;
+    display:inline-block;
+
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: inline-block !important;
+    position: relative !important;
+    top: 0px !important;
+    right: 0px !important;
+}
+.highlight:hover{
+    background-color: #999fdb;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+  }
+  
+  ::selection {
+    color: rgb(0, 0, 0);
+    background: yellow;
+  }
