@@ -6,7 +6,7 @@ In two different terminals, do:
 # Frontend
 - cd into frontend
 - npm install --legacy-peer-deps
-- run npm start
+- run `npm start`
 
 # Backend 
 - cd into backend
