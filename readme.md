@@ -1,3 +1,5 @@
+In two different terminals, do:
+
 # Frontend
 - cd into frontend
 - npm install --legacy-peer-deps
