@@ -1,0 +1,10 @@
+cache/*
+*.pyc
+*.pyo
+test_trainer/*
+__pycache__/main.cpython-39.pyc
+*/__pycache__/*
+*/node_modules/*
+*/cache/*.csv
+*/cache/LM/*.pkl
+*/user_checkpoints/*.json
