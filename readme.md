@@ -1,7 +1,10 @@
+# Frontend
 - cd into frontend
 - npm install --legacy-peer-deps
 - run npm start
 
+# Backend 
+- open a new terminal
 - cd into backend
 - create a new environment in conda
 - install requirements.txt
