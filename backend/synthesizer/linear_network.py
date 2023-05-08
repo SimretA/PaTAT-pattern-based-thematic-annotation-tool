@@ -35,7 +35,12 @@ SEED = 42
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
-torch.cuda.manual_seed_all(SEED)
+# torch.cuda.manual_seed_all(SEED)
+
+
+# device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+device=torch.device("cpu" if torch.cuda.is_available() else "cpu")
 
 def get_spanning(matches, sent):
     ranges = [(x[1],x[2]) for x in matches]
@@ -164,7 +169,6 @@ def patterns_against_examples(file_name, patterns, examples, ids, labels,priorit
 
 
 def train_and_report(patterns, inputs, outputs):
-    device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     #Change numpy inputs to tensors 
     outputs = torch.tensor(outputs).reshape(-1,1)
     inputs = torch.tensor(inputs)
@@ -301,7 +305,6 @@ def feature_selector(df):
 
 
 def feature_selector_2(df, k,  deleted_patterns=[], pinned_patterns=[]):
-    device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     patterns = []
     all_cols = df.columns.values
@@ -346,7 +349,6 @@ def feature_selector_2(df, k,  deleted_patterns=[], pinned_patterns=[]):
 
 def train_linear_mode(df, data, theme, soft_match_on=True, words_dict=None, similarity_dict=None, soft_threshold=0.6, soft_topk_on=False, 
 soft_topk=1, pattern_customized_dict=None, deleted_patterns=[], pinned_patterns=[]):
-    device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print("pinned patterns ", pinned_patterns)
     print("deleted patterns ", deleted_patterns)
     outs = df["labels"].values

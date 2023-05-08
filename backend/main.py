@@ -1,5 +1,3 @@
-from unicodedata import name
-from unittest import result
 from fastapi import FastAPI, Cookie
 from synthesizer.api_helper import *
 from api.schemas.Theme import *
@@ -11,7 +9,6 @@ import asyncio
 import time
 from pydantic import BaseModel
 from typing import List
-from typing import Union
 from fastapi import Request
 
 import pandas as pd
@@ -26,7 +23,7 @@ SEED = 42
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
-torch.cuda.manual_seed_all(SEED)
+# torch.cuda.manual_seed_all(SEED)
 
 executor = ProcessPoolExecutor()
 loop = asyncio.get_event_loop()
@@ -44,6 +41,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 
