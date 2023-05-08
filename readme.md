@@ -1,3 +1,6 @@
+## Notes:
+Currently uses Python 3.9
+
 In two different terminals, do:
 
 # Frontend
