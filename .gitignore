@@ -8,3 +8,4 @@ __pycache__/main.cpython-39.pyc
 */cache/*.csv
 */cache/LM/*.pkl
 */user_checkpoints/*.json
+package-lock.json

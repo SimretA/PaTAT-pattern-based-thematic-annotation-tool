@@ -1,7 +1,16 @@
-* cd into frontend
-* npm install
-* run npm start
+## Notes:
+Currently uses Python 3.9
 
-* cd into backend
-* create a new environment in conda
-* uvicorn main:app --port 8080 --host 0.0.0.0
+In two different terminals, do:
+
+# Frontend
+- cd into frontend
+- `npm install --legacy-peer-deps`
+-  `npm start`
+
+# Backend 
+- cd into backend
+- create a new environment (for example, using miniconda or python3's venv at the command line, i.e., `python3 -m venv ./venv` and then `venv/bin/activate`)
+- `pip install -r requirments0.txt`
+- `python -m spacy download en_core_web_sm`
+- `uvicorn main:app --port 8080 --host 0.0.0.0`
