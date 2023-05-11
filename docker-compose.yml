@@ -1,0 +1,10 @@
+version: "3"
+services:
+  fastapi:
+    build: ./backend
+    ports:
+      - "8080:8080"
+  react:
+    build: ./frontend
+    ports:
+      - "3000:3000"

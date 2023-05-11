@@ -68,6 +68,10 @@ class PatternsSplitThemeItem(BaseModel):
     new_theme_name: str
     theme: str
 
+@app.get("/")
+async def home():
+    return {"status":"Running"}
+
 
 @app.get("/bert_annotation")
 async def bert_annotation(request:Request):
@@ -79,8 +83,6 @@ async def bert_annotation(request:Request):
         }
     results = await loop.run_in_executor(executor, user_to_apiHelper[user].get_bert_annotation)
     return results
-
-
 
 @app.get("/restore_session/{user}")
 async def restore_session(user: str):
