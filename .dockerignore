@@ -1,0 +1,15 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+.envrc
+venv
+.vscode
+node_modules
+frontend/node_modules
+frontend/public
+frontend/src
+backend/__pycache__
