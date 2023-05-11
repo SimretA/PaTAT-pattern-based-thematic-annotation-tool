@@ -1,3 +1,14 @@
+# Overview
+
+- [To build and run from source-code](#to-build-and-run-from-source-code)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+- [To run in docker](#to-run-in-docker)
+  - [Backend](#backend-1)
+  - [Frontend](#frontend-1)
+- [To run in docker-compose](#to-run-in-docker-compose)
+- [To view API docs](#to-view-api-docs)
+
 ## Notes:
 
 Currently uses Python 3.9
