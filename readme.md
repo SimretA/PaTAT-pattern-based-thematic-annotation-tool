@@ -1,3 +1,4 @@
+# PaTAT
 # Overview
 
 - [To build and run from source-code](#to-build-and-run-from-source-code)
@@ -55,3 +56,9 @@ In two different terminals, do:
 # To view API docs
 
 - head to `http://localhost:8080/docs` after running the backend
+
+# Reference
+If you use our tools/code for your work, please cite the following paper:
+Simret Araya Gebreegziabher, Zheng Zhang, Xiaohang Tang, Yihao Meng, Elena L. Glassman, and Toby Jia-Jun Li. 2023. PaTAT: Human-AI Collaborative Qualitative Coding with Explainable Interactive Rule Synthesis. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). https://doi.org/10.1145/3544548.3581352
+
+
