@@ -362,7 +362,7 @@ soft_topk=1, pattern_customized_dict=None, deleted_patterns=[], pinned_patterns=
     ins = ins.to(device)
     
 
-    output = torch.tensor(outs).reshape(-1,1)
+    output = torch.tensor(outs, dtype=torch.int64).reshape(-1,1)
     output=output.to(device)
 
 
