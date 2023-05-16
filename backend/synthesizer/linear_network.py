@@ -358,7 +358,7 @@ soft_topk=1, pattern_customized_dict=None, deleted_patterns=[], pinned_patterns=
     smaller_inputs =  df[cols].values
 
 
-    ins = torch.tensor(smaller_inputs)
+    ins = torch.tensor(smaller_inputs, dtype=torch.int64)
     ins = ins.to(device)
     
 
