@@ -57,6 +57,16 @@ In two different terminals, do:
 
 - head to `http://localhost:8080/docs` after running the backend
 
+# To run in AWS instance
+- create an instance with GPU: Instance should have at least 30GBs of local storage
+- download the generated keypair and `chmod 400 <FILE.pem>` to make it read-only
+- copy the files into the instance (either scp the directory from your local machine `scp -i "FILE.pem" -r <DIR> ec2-user@INSTANCE_ADDRESS:` or git clone after sshing into the instance `ssh -i "FILE.pem" ec2-user@INSTANCE_ADDRESS`)
+- install docker and docker compose: helpful resources ( to install docker [link](https://docs.docker.com/engine/install/) , to install docker-compose [link](https://docs.docker.com/compose/install/linux/), to start docker demeaon [link](https://docs.docker.com/config/daemon/start/)
+- allow ports 3000 and 8000 to be accessible from your instance
+- follow the running instructions above to run PaTAT
+
+
+
 # Reference
 If you use our tools/code for your work, please cite the following paper:
 
