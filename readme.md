@@ -62,7 +62,8 @@ In two different terminals, do:
 - download the generated keypair and `chmod 400 <FILE.pem>` to make it read-only
 - copy the files into the instance (either scp the directory from your local machine `scp -i "FILE.pem" -r <DIR> ec2-user@INSTANCE_ADDRESS:` or git clone after sshing into the instance `ssh -i "FILE.pem" ec2-user@INSTANCE_ADDRESS`)
 - install docker and docker compose: helpful resources ( to install docker [link](https://docs.docker.com/engine/install/) , to install docker-compose [link](https://docs.docker.com/compose/install/linux/), to start docker demeaon [link](https://docs.docker.com/config/daemon/start/)
-- allow ports 3000 and 8000 to be accessible from your instance
+- allow ports 3000 and 8000 to be accessible from your instance inbound and outbound security rules
+- go to frontend/src/assets/base_url.jsx and replace the ip address with your instances public ipv4
 - follow the running instructions above to run PaTAT
 
 
