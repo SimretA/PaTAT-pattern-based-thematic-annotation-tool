@@ -64,7 +64,7 @@ In two different terminals, do:
 - copy the files into the instance (either scp the directory from your local machine `scp -i "FILE.pem" -r <DIR> ec2-user@INSTANCE_ADDRESS:` or git clone after sshing into the instance `ssh -i "FILE.pem" ec2-user@INSTANCE_ADDRESS`) where INSTANCE_ADDRESS is the public ipv4 DNS address.
 - install docker and docker compose: helpful resources ( to install docker [link](https://docs.docker.com/engine/install/) , to install docker-compose [link](https://docs.docker.com/compose/install/linux/), to start docker demeaon [link](https://docs.docker.com/config/daemon/start/)
 - Using the Instance UI in Amazon AWS, allow ports 3000 and 8000 to be accessible from your instance inbound and outbound security rules
-![Screenshot_6_1_23__3_12_PM](https://github.com/SimretA/PaTAT-pattern-based-thematic-annotation-tool/assets/2320194/56db377e-bf44-42c4-9fac-d3f4fdbc65a9)
+![Screenshot_6_1_23__3_12_PM](https://github.com/SimretA/PaTAT-pattern-based-thematic-annotation-tool/assets/2320194/004a6acb-9f62-40ac-9f17-eea7ab3d0cf8)
 - ssh in and go to frontend/src/assets/base_url.jsx and replace the ip address with your instances public ipv4
 - follow the running instructions above to run PaTAT
 
