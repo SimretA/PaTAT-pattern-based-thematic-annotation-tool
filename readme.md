@@ -52,6 +52,7 @@ In two different terminals, do:
 
 - install `docker-compose` if you don't have it installed
 - `docker-compose up --build` or `docker compose up --build` (without the hyphen); seems to be machine dependent. Try one if the other doesn't work!
+- if you're running on a local machine, go to http://localhost:3000/; if you're running on an AWS machine (see below) then replace localhost with the public IPv4 address
 
 # To view API docs
 
