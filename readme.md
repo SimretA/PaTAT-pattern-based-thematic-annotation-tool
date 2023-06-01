@@ -51,7 +51,7 @@ In two different terminals, do:
 # To run in docker-compose
 
 - install `docker-compose` if you don't have it installed
-- `docker-compose up --build`
+- `docker-compose up --build` or `docker compose up --build` (without the hyphen); seems to be machine dependent. Try one if the other doesn't work!
 
 # To view API docs
 
