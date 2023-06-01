@@ -60,7 +60,7 @@ In two different terminals, do:
 # To run in AWS instance
 - create an instance with GPU: Instance should have at least 30GBs of local storage
 - download the generated keypair and `chmod 400 <FILE.pem>` to make it read-only
-- launch instance
+- launch instance if its never been launched; use instance state drop-down to restart a stopped instance if its already been launched by stopped.
 - copy the files into the instance (either scp the directory from your local machine `scp -i "FILE.pem" -r <DIR> ec2-user@INSTANCE_ADDRESS:` or git clone after sshing into the instance `ssh -i "FILE.pem" ec2-user@INSTANCE_ADDRESS`)
 - install docker and docker compose: helpful resources ( to install docker [link](https://docs.docker.com/engine/install/) , to install docker-compose [link](https://docs.docker.com/compose/install/linux/), to start docker demeaon [link](https://docs.docker.com/config/daemon/start/)
 - Using the Instance UI in Amazon AWS, allow ports 3000 and 8000 to be accessible from your instance inbound and outbound security rules
