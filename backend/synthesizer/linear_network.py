@@ -38,9 +38,9 @@ torch.manual_seed(SEED)
 # torch.cuda.manual_seed_all(SEED)
 
 
-# device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-device=torch.device("cpu" if torch.cuda.is_available() else "cpu")
+# device=torch.device("cpu" if torch.cuda.is_available() else "cpu")
 
 def get_spanning(matches, sent):
     ranges = [(x[1],x[2]) for x in matches]
