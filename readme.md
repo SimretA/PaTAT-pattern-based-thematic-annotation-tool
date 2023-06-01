@@ -65,7 +65,7 @@ In two different terminals, do:
 - install docker and docker compose: helpful resources ( to install docker [link](https://docs.docker.com/engine/install/) , to install docker-compose [link](https://docs.docker.com/compose/install/linux/), to start docker demeaon [link](https://docs.docker.com/config/daemon/start/)
 - Using the Instance UI in Amazon AWS, allow ports 3000 and 8000 to be accessible from your instance inbound and outbound security rules
 ![Screenshot_6_1_23__3_12_PM](https://github.com/SimretA/PaTAT-pattern-based-thematic-annotation-tool/assets/2320194/004a6acb-9f62-40ac-9f17-eea7ab3d0cf8)
-- ssh in and go to frontend/src/assets/base_url.jsx and replace the ip address with your instances public ipv4
+- ssh in and go to PaTAT-pattern-based-thematic-annotation-tool/frontend/src/assets/base_url.jsx and replace the ip address with your instances public ipv4
 - follow the running instructions above to run PaTAT
 
 
